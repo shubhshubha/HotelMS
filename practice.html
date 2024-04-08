@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- #00486c -->
+<!-- #6c4ba5 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <link rel="stylesheet" href="./asstets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./asstets/css/demo.css">
+    <link rel="stylesheet" href="./asstets/css/normalize.css">
+    <link rel="stylesheet" href="./asstets/css/pushy.css">
+    <link rel="stylesheet" href="./asstets/css/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+
+    <style>
+        #top-second-bar {
+            height: 10%;
+            background-color: black;
+            opacity: 0.7;
+            position: relative;
+            z-index: 20;
+
+        }
+
+        input[type="range"]:focus::-webkit-slider-thumb {
+            border: 1px solid #053a5f;
+            outline: 3px solid #053a5f;
+            outline-offset: 0.125rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="back-to-top" id="Back2Top"><a href="#topRow">&uparrow;</a></div>
+        <div class="enquiry"><span type="button"  data-bs-toggle="modal" data-bs-target="#enquiryModal">Enquiry</span></div>
+        <div class="offer"><span>Offer</span></div>
+        <div class="card enquiry-block">
+            <table class="table table-hover">
+                <tr>
+                    <td>Check-in date : </td>
+                    <td><input type="date" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td>Check-out date : </td>
+                    <td><input type="date" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td>Adults : </td>
+                    <td><input type="number" placeholder="1" name="" id="" class="w-25"></td>
+                </tr>
+                <tr>
+                    <td>Children : </td>
+                    <td><input type="number" placeholder="0" name="" id="" class="w-25"></td>
+                </tr>
+                <tr>
+                    <td>Rooms : </td>
+                    <td><input type="number" placeholder="1" name="" id="" class="w-25"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="d-flex justify-content-center align-center"><input type="button"
+                            class="p-3 text-white" value="Check Availabilty"
+                            style="background-color: #00486c;border-radius: 20px;"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="row" id="topRow" style="background-color: #000;">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <nav class="navbar ">
+                            <div class="text-white pt-2 pb-2 ps-3" id="contact-info">
+                                <div>
+                                    <i class="fa-solid fa-envelope fs-5" style="position:relative;top:2px;"></i>
+                                    <span class="me-auto ms-1 ">directorksspl@gmail.com</span>
+                                </div>
+                                <div> <i class="fa-solid fa-mobile-screen-button ms-1"
+                                        style="position:relative;top:1.1px;"></i>
+                                    <span class="ms-1" style="font-weight:400;">05198-298901,
+                                        +91-8471054381</span>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <!-- <div class="col-sm-3 bg-dark"></div> -->
+                    <div class="col-sm-6 text-white social-icon-box-container">
+                        <div class="social-icon-box me-2"><i class="fa-brands fa-twitter "></i></div>
+                        <div class="social-icon-box me-2"><i class="fa-brands fa-facebook-f"></i></div>
+                        <div class="social-icon-box me-2"><i class="fa-brands fa-instagram "></i></div>
+                        <div class="social-icon-box me-2"><i class="fa-brands fa-facebook-messenger "></i></div>
+                        <div class="social-icon-box me-5"><i class="fa-brands fa-whatsapp"></i></div>
+                        <button class="btn btnToggleOffcanvas" type="button"
+                            style=" position:fixed;top: 0;right:0;z-index: 21;">
+                            <span class="menu-btn" data-bs-target="#offcanvasExample">&#9776</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 hero-bg p-0">
+                <!-- ===========top-second-bar Start=============== -->
+                <div id="top-second-bar" class="row">
+                    <div class="col-sm-5 menu-header">
+                        <img src="./asstets/img/hotel.png" class="img-fluid" width="120px" alt="">
+                        <span class="text-white">Hotel Thunder World</span>
+                    </div>
+
+                    <div class="col-sm-7">
+                        <nav class="navbar navbar-expand-lg navbar-dark ">
+                            <div class="container-fluid">
+
+                                <button style="position:absolute;top:-10%;right:0px;display:none;z-index:300"
+                                    class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                    <ul class="navbar-nav ms-auto">
+                                        <li class="nav-item ">
+                                            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">About Hotel</a></li>
+                                                <li><a class="dropdown-item" href="#">Our Customers</a></li>
+                                                <li><a class="dropdown-item" href="#">Photo Gallery</a></li>
+                                                <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                                                <li><a class="dropdown-item" href="#">Our Staff</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Services
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item " href="#">Book A Room</a></li>
+                                                <li><a class="dropdown-item " href="#">Restaurant</a></li>
+                                                <li><a class="dropdown-item " href="#">Parking</a></li>
+                                                <li><a class="dropdown-item " href="#">Gym</a></li>
+                                                <li><a class="dropdown-item " href="#">Laundry</a></li>
+                                                <li><a class="dropdown-item " href="#">Doctor on Call</a></li>
+                                                <li><a class="dropdown-item " href="#">Hire Driver</a></li>
+                                                <li><a class="dropdown-item " href="#">Free wifi</a></li>
+                                                <li><a class="dropdown-item " href="#">Bar and Drinks</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" href="#">Gallery</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">Food Menu</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item " href="#">Veg</a></li>
+                                                <li><a class="dropdown-item " href="#">Non Veg</a></li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" href="#">Login</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <!--===========Top Second bar End=========== -->
+                <!--===========Animated Hotel Start=========== -->
+                <div class="row" id="hotelContent" style="height:90%;background-color: black;opacity:0.7;">
+                    <div class="col-sm-12 d-flex justify-content-center">
+                        <div class="hotel-bg-content1" id="htlContent">
+                            <h2 class="h1 text-center" data-aos='zoom-in' data-aos-duration='3000'>Discover The Perfect
+                                Balance Of Hospitality,Luxury And Comfort.</h2>
+                            <p class="text-center" style="font-size: 1.2rem;" data-aos='zoom-in'
+                                data-aos-duration='3000'>We are focused on providing clients with high level of comfort
+                                <br />and excellent affordable rates.
+                            </p>
+
+                            <div class="w-100" style="display: flex;justify-content: center;">
+                                <a href="#" class="mt-3" data-bs-toggle="modal" data-bs-target="#book-room">
+                                    <span>Book A Room</span>
+                                    <span>Book A Room</span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--===========Animated Hotel End=========== -->
+            </div>
+        </div>
+        <div class="row mt-5 ">
+            <div class="col-sm-1 bg-secondary"></div>
+            <div class="col-sm-2 bg-secondary p-5 ">
+                <span style="font-size: 17px;font-weight: 600; color:#ebc383">Check in date:</span>
+                <input type="date" class="form-control mt-2" />
+            </div>
+            <div class="col-sm-2 p-5 bg-secondary ">
+                <span style="font-size: 1.19;font-weight: 600; color:#ebc383">Check out date:</span>
+                <input type="date" class="form-control mt-2" />
+            </div>
+            <div class="col-sm-1 py-5 bg-secondary">
+                <span style="font-size: 1.19;font-weight: 600; color:#ebc383">Adults:</span>
+                <select name="" id="" class="form-control mt-2">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+            <div class="col-sm-1 py-5 bg-secondary ">
+                <span style="font-size: 1.19;font-weight: 600; color:#ebc383">Children:</span>
+                <select name="" id="" class="form-control mt-2">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="col-sm-1 py-5 bg-secondary ">
+                <span style="font-size: 1.19;font-weight: 600; color:#ebc383">Rooms:</span>
+                <select name="" id="" class="form-control mt-2">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="col-sm-3 py-5 pt-5 bg-secondary">
+                <span style="font-size: 1.19;font-weight: 600; color:#ebc383">Rooms:</span>
+                <input type="button" class="btn btn-lg btn-primary" value="Check Availabilty">
+            </div>
+            <div class="col-sm-1 bg-secondary"></div>
+        </div>
+        <div class="row" style="height: 100vh;width: 100%;">
+
+        </div>
+    </div>
+    <!-- --------------Book Room Start --------------->
+
+
+    <div class="modal fade mt-auto" id="book-room" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="background-color:white">
+                <div class="modal-header">
+                    <h3 class="modal-title ms-auto mt-0" id="exampleModalLabel" style="color: #00486c;;">Booking Your
+                        Hotel Room</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body mt-0">
+                    <form action="" method="post">
+                        <div class="d-flex justify-content-evenly flex-row align-items-center">
+                            <span class="mt-0 filter">FILTER</span>
+                            <span class="ms-auto fs-5 filter-arrow">></span>
+                        </div>
+                        <div style="display: none;" class="mt-0 range">
+                            <label for="" class="col-form-label">Your Budget</label>
+                            <p>What price range you are looking for ?</p>
+                            <input class="w-100" type="range" name="range" min="100" max="400" id="price-range"
+                                style="background-color:#00486c;">
+                        </div>
+                        <div style="display:none" class=" mt-3 price-block">
+                            <!-- d-flex justify-content-evenly align-items-center flex-row -->
+                            <span style="position: relative;left:15%;top:-1px;">$</span>
+                            <input type="number" id="val1" class="form-control w-25 text-center" value="200">
+                            <span style="position: relative;left:15%;top:-1px;">$</span>
+                            <input type="number" value="400" id="val2" class="form-control w-25 text-center">
+                        </div>
+                        <div class="w-100 mt-2" style="height: 1px;background-color: #00486c;"></div>
+                        <div class="mb-1 mt-1">
+                            <label for="chindate" class="col-form-label">Check-in date</label>
+                            <input type="date" class="form-control" name="" value="" id="chindate">
+                        </div>
+                        <div class="mt-2">
+                            <label for="choutdate" class="col-form-label">Check-out date</label>
+                            <input type="date" class="form-control" name="" id="choutdate">
+                        </div>
+                        <div class=" mt-3 ps-5 d-flex flex-row justify-content-center align-items-center">
+                            <div>
+                                <label for="adult" class="col-form-label">Adults</label>
+                                <input type="number" placeholder="1" class="form-control w-50 " name="" id="adult">
+                            </div>
+                            <div>
+                                <label for="adult" class="col-form-label">Children</label>
+                                <input type="number" placeholder="0" class="form-control w-50 text-left" name=""
+                                    id="adult">
+                            </div>
+                            <div>
+                                <label for="adult" class="col-form-label">Rooms</label>
+                                <input type="number" placeholder="1" class="form-control w-50 " name="" id="adult">
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center mt-4">
+                            <button type="submit" class="btn ms-auto me-auto text-white mt-4"
+                                style="background-color: #00486c;">Check Availabilty</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- --------------Book Room End --------------->
+    <!-- offcanvas start -->
+    <!-- Pushy Menu -->
+    <nav class="pushy pushy-left bg-dark" data-focus="#first-link">
+        <div class="pushy-content">
+            <ul>
+                <li class="pushy-link"><a href="#">Home</a></li>
+
+                <li class="pushy-submenu">
+                    <button>About Us</button>
+                    <ul>
+                        <li class="pushy-link"><a href="#">About Hotel</a></li>
+                        <li class="pushy-link"><a href="#">Our Customers</a></li>
+                        <li class="pushy-link"><a href="#">Photo Gallery</a></li>
+                        <li class="pushy-link"><a href="#">Testimonials</a></li>
+                        <li class="pushy-link"><a href="#">Our Staff</a></li>
+                    </ul>
+                </li>
+                <li class="pushy-submenu">
+                    <button id="first-link">Services</button>
+                    <ul>
+                        <li class="pushy-submenu">
+                            <button>Book A Room</button>
+                            <ul>
+                                <li class="pushy-link"><a href="#">AC Room</a></li>
+                                <li class="pushy-link"><a href="#">Non AC Room</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="pushy-link"><a href="#">Restaurant</a></li>
+                        <li class="pushy-link"><a href="#">Parking</a></li>
+                        <li class="pushy-link"><a href="#">Doctor On Call</a></li>
+                        <li class="pushy-link"><a href="#">Laundry</a></li>
+                        <li class="pushy-link"><a href="#">Gym</a></li>
+                        <li class="pushy-link"><a href="#">Hire Driver</a></li>
+                        <li class="pushy-link"><a href="#">Free WiFi</a></li>
+                        <li class="pushy-link"><a href="#">Bar & Drinks</a></li>
+                    </ul>
+                </li>
+                <li class="pushy-submenu">
+                    <button id="first-link">Gallery</button>
+                    <ul>
+                        <li class="pushy-submenu">
+                            <button>Hotel</button>
+                            <ul>
+                                <li class="pushy-link"><a href="#">Reception</a></li>
+                                <li class="pushy-link"><a href="#">Bedroom</a></li>
+                                <li class="pushy-link"><a href="#">Parking</a></li>
+                                <li class="pushy-link"><a href="#">Bathroom</a></li>
+                                <li class="pushy-link"><a href="#">Party Hall</a></li>
+                                <li class="pushy-link"><a href="#">Bar</a></li>
+                            </ul>
+                        </li>
+                        <li class="pushy-link"><a href="#">Restaurant</a></li>
+                        <li class="pushy-link"><a href="#">Gym</a></li>
+                    </ul>
+                </li>
+                <li class="pushy-submenu">
+                    <button>Food Menu</button>
+                    <ul>
+                        <li class="pushy-link"><a href="#">Veg</a></li>
+                        <li class="pushy-link"><a href="#">Non Veg</a></li>
+                    </ul>
+                </li>
+                <li class="pushy-link"><a href="#">Login</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+    <!-- offcanvas end-->
+   
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./asstets/js/bootstrap.min.js"></script>
+    <script src="./asstets/js/jquery.js"></script>
+    <script src="./asstets/js/pushy.min.js"></script>
+    <script src="./asstets/js/index.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
+
+<!-- Modal -->
+<div class="modal fade"  id="enquiryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" >
+      <div class="modal-content" style="width:70vw">
+        <div class="modal-body">
+            <div class="row">
+               <div class="col-sm-4">
+                  <img src="./asstets/img/enquiry.png" class="img-fluid">
+               </div>
+               <div class="col-sm-8">
+                     <div class="row">
+                        <div class="col-sm-12 d-flex justify-content-end">
+                            <button type="button" class="btn-close text-white fs-5 ms-auto" style="background-color: #00486c;border-radius: 50%;" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-sm-6 d-flex justify-content-end">
+                            <input type="text" class="form-control" placeholder="Name" />
+                        </div>
+                        <div class="col-sm-6 d-flex justify-content-end">
+                            <input type="number" class="form-control" placeholder="Mobile Number" />
+                        </div>
+                        <div class="col-sm-6 d-flex justify-content-end">
+                            <input type="email" class="form-control" placeholder="Email" />
+                        </div>
+                        <div class="col-sm-6 d-flex justify-content-end">
+                            <input type="text" class="form-control" placeholder="City" />
+                        </div>
+                     </div>
+
+               </div>
+            </div>
+
+        </div>
+       
+      </div>
+    </div>
+  </div>
